@@ -39,3 +39,9 @@ POST the plugin configuration to your Kong admin API, for example:
 ```
 
 **That's it** - you will get a 401 code for Unauthorized if any request on that route does not contain a valid header that matches the HMAC signature of the body. Otherwise, the request will pass through unmodified.
+
+## Supported Signature Algorithms
+
+Currently, the algorithm support is limited to:
+
+* sha256
